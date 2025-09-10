@@ -1,0 +1,84 @@
+credentials_for_provider:
+  access_token:
+    help:
+      en_US: Get your Access Token from WOZTELL
+      zh_Hans: 从 WOZTELL 获取您的 Access Token
+    label:
+      en_US: Access Token
+      zh_Hans: Access Token
+    required: true
+    type: secret-input
+    url: https://doc.woztell.com/docs/documentations/settings/access-token
+
+identity:
+  author: "woztell"
+  name: "woztell"
+  label:
+    en_US: "WOZTELL"
+    zh_Hans: "WOZTELL"
+    pt_BR: "WOZTELL"
+  description:
+    en_US: "WOZTELL"
+    zh_Hans: "WOZTELL"
+    pt_BR: "WOZTELL"
+  icon: "icon.svg"
+
+  #########################################################################################
+  # If you want to support OAuth, you can uncomment the following code.
+  #########################################################################################
+  # oauth_schema:
+  #   client_schema:
+  #     - name: "client_id"
+  #       type: "secret-input"
+  #       required: true
+  #       url: https://example.com/oauth/authorize
+  #       placeholder:
+  #         en_US: "Please input your Client ID"
+  #         zh_Hans: "请输入你的 Client ID"
+  #         pt_BR: "Insira seu Client ID"
+  #       help:
+  #         en_US: "Client ID is used to authenticate requests to the example.com API."
+  #         zh_Hans: "Client ID 用于认证请求到 example.com API。"
+  #         pt_BR: "Client ID é usado para autenticar solicitações à API do example.com."
+  #       label:
+  #         zh_Hans: "Client ID"
+  #         en_US: "Client ID"
+  #     - name: "client_secret"
+  #       type: "secret-input"
+  #       required: true
+  #       url: https://example.com/oauth/authorize
+  #       placeholder:
+  #         en_US: "Please input your Client Secret"
+  #         zh_Hans: "请输入你的 Client Secret"
+  #         pt_BR: "Insira seu Client Secret"
+  #       help:
+  #         en_US: "Client Secret is used to authenticate requests to the example.com API."
+  #         zh_Hans: "Client Secret 用于认证请求到 example.com API。"
+  #         pt_BR: "Client Secret é usado para autenticar solicitações à API do example.com."
+  #       label:
+  #         zh_Hans: "Client Secret"
+  #         en_US: "Client Secret"
+  # credentials_schema:
+  #   - name: "access_token"
+  #     type: "secret-input"
+  #     url: "https://doc.woztell.com/docs/documentations/settings/access-token/"
+  #     label:
+  #       zh_Hans: "Access Token"
+  #       en_US: "Access Token"
+  #   - name: "woztell_channel_api"
+  #     type: "secret-input"
+  #     help: "Please configure the token to use the WOZTELL Channel API, The token is located at WOZTELL -> Channels -> Channel(Edit) -> Advanced Access -> Access Tokens"
+  #     label:
+  #       zh_Hans: "WOZTELL Channel API"
+  #       en_US: "WOZTELL Channel API"
+
+tools:
+  - tools/get_conversation_history.yaml
+  - tools/get_members_by_tags.yaml
+  - tools/get_member_info.yaml
+  - tools/redirect_member_to_node.yaml
+  - tools/send_responses.yaml
+  - tools/set_member_tags.yaml
+extra:
+  python:
+    source: provider/woztell.py

@@ -1,0 +1,107 @@
+description:
+  human:
+    en_US: Redirecting a member to a specific node in tree and executing all or partial components of the node.
+    zh_Hans: 将成员重定向到树中的特定节点并执行该节点的全部或部分组件。
+  llm: A tool when you wants to redirect member to node.
+extra:
+  python:
+    source: tools/redirect_member_to_node.py
+identity:
+  author: woztell
+  icon: icon.svg
+  label:
+    en_US: Redirect Member To Node
+    zh_Hans: 发送回复
+  name: redirect_member_to_node
+parameters:
+  - form: llm
+    type: string
+    human_description:
+      en_US: Channel in WOZTELL.
+      zh_Hans: 在 WOZTELL 后台的 Channel。
+    label:
+      en_US: Channel
+      zh_Hans: 频道
+    llm_description: Channel in WOZTELL.
+    name: channelId
+    required: true
+  - form: llm
+    human_description:
+      en_US: Recipient ID in integration. E.g. PSID on Facebook, phone number on WhatsApp, etc.
+      zh_Hans: 收件人，Whatsapp 的号码或者 PSID。
+    label:
+      en_US: Reciepient ID (WhatsApp Phone Number or PSID)
+      zh_Hans: 收件人（Whatsapp 的号码或者 PSID）
+    llm_description: Recipient ID in integration. E.g. PSID on Facebook, phone number on WhatsApp, etc.
+    name: recipientId
+    required: true
+    type: string
+  - form: llm
+    human_description:
+      en_US: Target tree you wish to redirect to.
+      zh_Hans: 您希望重定向到的目标树。
+    label:
+      en_US: Tree
+      zh_Hans: 目标树
+    llm_description: The tree id in WOZTELL.
+    name: tree
+    required: true
+    type: string
+  - form: llm
+    human_description:
+      en_US: Target node you wish to redirect to.
+      zh_Hans: 您希望重定向到的目标节点。
+    label:
+      en_US: Node
+      zh_Hans: 目标节点
+    llm_description: The npde id in WOZTELL.
+    name: nodeCompositeId
+    required: true
+    type: string
+  - form: llm
+    human_description:
+      en_US: Redirect execute pre-action; can be set as true or false.
+      zh_Hans: 重定向执行预操作；可以设置为 true 或 false。
+    label:
+      en_US: Run Pre Action
+      zh_Hans: 执行预操作
+    llm_description: Redirect execute pre-action.
+    name: runPreAction
+    required: true
+    type: boolean
+    default: true
+  - form: llm
+    human_description:
+      en_US: Redirect send response; can be set as true or false.
+      zh_Hans: 重定向发送响应；可以设置为 true 或 false。
+    label:
+      en_US: Send Response
+      zh_Hans: 发送响应
+    llm_description: Redirect send response.
+    name: sendResponse
+    required: true
+    type: boolean
+    default: true
+  - form: llm
+    human_description:
+      en_US: Redirect execute post-action; can be set as true or false.
+      zh_Hans: 重定向执行后操作；可以设置为 true 或 false。
+    label:
+      en_US: Run Post Action
+      zh_Hans: 执行后操作
+    llm_description: Redirect execute post-action.
+    name: runPostAction
+    required: true
+    type: boolean
+    default: true
+  - form: llm
+    human_description:
+      en_US: Meta object provided to the node. Meta object can be accessed in target node via this.agendaMeta.
+      zh_Hans: 提供给节点的元对象。可以通过 this.agendaMeta 在目标节点中访问元对象。
+    label:
+      en_US: Meta(JSON)
+      zh_Hans: Meta(JSON)
+    llm_description: Meta object provided to the node.
+    name: meta
+    required: false
+    type: string

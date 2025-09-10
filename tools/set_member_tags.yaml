@@ -1,0 +1,49 @@
+description:
+  human:
+    en_US: Tag members in WOZTELL.
+    zh_Hans: 给 WOZTELL 中的成员加标签。
+  llm: A tool when you wants to set member tags in WOZTELL.
+extra:
+  python:
+    source: tools/set_member_tags.py
+identity:
+  author: woztell
+  icon: icon.svg
+  label:
+    en_US: Set Member Tags
+    zh_Hans: 设置成员标签
+  name: set_member_tags
+parameters:
+  - form: llm
+    type: string
+    human_description:
+      en_US: Channel in WOZTELL.
+      zh_Hans: 在 WOZTELL 后台的 Channel。
+    label:
+      en_US: Channel
+      zh_Hans: 频道
+    llm_description: Channel in WOZTELL.
+    name: channelId
+    required: true
+  - form: llm
+    human_description:
+      en_US: Enter tags, separated by commas.
+      zh_Hans: 标签，多个用逗号隔开。
+    label:
+      en_US: Tags
+      zh_Hans: 标签
+    llm_description: Member tags.
+    name: tags
+    required: true
+    type: string
+  - form: llm
+    human_description:
+      en_US: External ID in integration. E.g. PSID on Facebook, phone number on WhatsApp, etc.
+      zh_Hans: Whatsapp 的号码或者 PSID。
+    label:
+      en_US: External ID
+      zh_Hans: External ID
+    llm_description: PSID on Facebook, phone number on WhatsApp, etc.
+    name: externalId
+    required: true
+    type: string

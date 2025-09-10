@@ -1,0 +1,63 @@
+description:
+  human:
+    en_US: Get the specified tags member in WOZTELL.
+    zh_Hans: 获取 WOZTELL 中指定的标签成员。
+  llm: A tool when you wants to get members in WOZTELL.
+extra:
+  python:
+    source: tools/get_members_by_tags.py
+identity:
+  author: woztell
+  icon: icon.svg
+  label:
+    en_US: Get Members By Tags
+    zh_Hans: 获取成员
+  name: get_members_by_tags
+parameters:
+  - form: llm
+    type: string
+    human_description:
+      en_US: Channel in WOZTELL.
+      zh_Hans: 在 WOZTELL 后台的 Channel。
+    label:
+      en_US: Channel
+      zh_Hans: 频道
+    llm_description: Channel in WOZTELL.
+    name: channelId
+    required: true
+  - form: llm
+    human_description:
+      en_US: Enter tags, separated by commas.
+      zh_Hans: 标签，多个用逗号隔开。
+    label:
+      en_US: Tags
+      zh_Hans: 标签
+    llm_description: Member tags.
+    name: tags
+    required: true
+    type: string
+  - form: llm
+    human_description:
+      en_US: Max number of results to return.
+      zh_Hans: 结果条数。
+    label:
+      en_US: Limit, up to 100
+      zh_Hans: 限制，最大100
+    llm_description: Max number of results to return.
+    name: limit
+    required: false
+    type: number
+    default: 100
+    max: 100
+    min: 1
+  - form: llm
+    human_description:
+      en_US: PageInfo.cursor
+      zh_Hans: 分页信息的游标
+    label:
+      en_US: Cursor
+      zh_Hans: 分页游标
+    llm_description: PageInfo.cursor
+    name: cursor
+    required: false
+    type: string

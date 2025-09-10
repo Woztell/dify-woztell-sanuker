@@ -1,0 +1,88 @@
+description:
+  human:
+    en_US: Get member's conversation history in WOZTELL.
+    zh_Hans: 获取某个成员的对话历史。
+  llm: A tool when you wants to get conversation history in WOZTELL.
+extra:
+  python:
+    source: tools/get_conversation_history.py
+identity:
+  author: woztell
+  icon: icon.svg
+  label:
+    en_US: Get Conversation History By ID
+    zh_Hans: 获取对话历史
+  name: get_conversation_history
+parameters:
+  - form: llm
+    type: string
+    human_description:
+      en_US: Channel in WOZTELL.
+      zh_Hans: 在 WOZTELL 后台的 Channel。
+    label:
+      en_US: Channel
+      zh_Hans: 频道
+    llm_description: Channel in WOZTELL.
+    name: channelId
+    required: true
+  - form: llm
+    human_description:
+      en_US: External ID in integration. E.g. PSID on Facebook, phone number on WhatsApp, etc.
+      zh_Hans: Whatsapp 的号码或者 PSID。
+    label:
+      en_US: External ID
+      zh_Hans: External ID
+    llm_description: PSID on Facebook, phone number on WhatsApp, etc.
+    name: externalId
+    required: true
+    type: string
+
+  - name: from
+    type: string
+    required: false
+    form: llm
+    label:
+      en_US: From
+      zh_Hans: 开始时间
+    human_description:
+      en_US: Format(YYYY-MM-DD HH:mm:ss)
+      zh_Hans: 格式（YYYY-MM-DD HH:mm:ss）
+    llm_description: Date time, format YYYY-MM-DD HH:mm:ss
+
+  - name: to
+    type: string
+    required: false
+    form: llm
+    label:
+      en_US: To
+      zh_Hans: 结束时间
+    human_description:
+      en_US: Format(YYYY-MM-DD HH:mm:ss)
+      zh_Hans: 格式（YYYY-MM-DD HH:mm:ss）
+    llm_description: Date time, format YYYY-MM-DD HH:mm:ss
+
+  - form: llm
+    human_description:
+      en_US: Max number of results to return.
+      zh_Hans: 结果条数。
+    label:
+      en_US: Limit, up to 100
+      zh_Hans: 限制，最大100
+    llm_description: Max number of results to return.
+    name: limit
+    required: false
+    type: number
+    default: 100
+    max: 100
+    min: 1
+  - form: llm
+    human_description:
+      en_US: PageInfo.cursor
+      zh_Hans: 分页信息的游标
+    label:
+      en_US: Cursor
+      zh_Hans: 分页游标
+    llm_description: PageInfo.cursor
+    name: cursor
+    required: false
+    type: string

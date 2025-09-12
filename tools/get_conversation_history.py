@@ -26,6 +26,12 @@ class WoztellGetConversationHistoryTool(Tool):
         date_from = tool_parameters.get("from", "")
         date_to = tool_parameters.get("to", "")
 
+        if limit > 100 or limit < 1:
+            yield self.create_text_message(
+                f"Variable 'limit' got invalid value {limit}."
+            )
+            return
+
         try:
             headers = {
                 "Content-Type": "application/json",
@@ -139,6 +145,11 @@ query getMemberId($channelId: ID, $externalId: ID) {
             )
             res.raise_for_status()
             response_data = res.json()
+            if response_data.get("errors"):
+                yield self.create_text_message(
+                    f"An error occurred while processing the data: {response_data.errors}"
+                )
+                return
             yield self.create_json_message(response_data.get("data")["apiViewer"])
         except requests.exceptions.HTTPError as e:
             yield self.create_text_message(

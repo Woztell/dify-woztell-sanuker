@@ -8,10 +8,8 @@ label:
   zh_Hans: WOZTELL
   pt_BR: WOZTELL
 description:
-  en_US: WOZTELL
-  ja_JP: WOZTELL
-  zh_Hans: WOZTELL
-  pt_BR: WOZTELL
+  en_US: WOZTELL is a chatbot builder platform which enables you to build your own bot easily in a code-free interface.
+  zh_Hans: WOZTELL 是一个聊天机器人构建平台，让你可以在无需编写代码的界面中轻松创建属于你的机器人。
 icon: icon.svg
 icon_dark: icon-dark.svg
 resource:

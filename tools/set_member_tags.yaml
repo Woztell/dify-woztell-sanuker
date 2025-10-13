@@ -7,7 +7,7 @@ extra:
   python:
     source: tools/set_member_tags.py
 identity:
-  author: woztell
+  author: Woztell
   icon: icon.svg
   label:
     en_US: Set Member Tags

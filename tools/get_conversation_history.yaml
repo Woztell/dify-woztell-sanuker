@@ -7,7 +7,7 @@ extra:
   python:
     source: tools/get_conversation_history.py
 identity:
-  author: woztell
+  author: Woztell
   icon: icon.svg
   label:
     en_US: Get Conversation History By ID

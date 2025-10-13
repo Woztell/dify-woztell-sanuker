@@ -7,7 +7,7 @@ extra:
   python:
     source: tools/get_member_info.py
 identity:
-  author: woztell
+  author: Woztell
   icon: icon.svg
   label:
     en_US: Get Member Info By ID

@@ -7,7 +7,7 @@ extra:
   python:
     source: tools/get_members_by_tags.py
 identity:
-  author: woztell
+  author: Woztell
   icon: icon.svg
   label:
     en_US: Get Members By Tags

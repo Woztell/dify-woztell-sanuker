@@ -1,0 +1,38 @@
+description:
+  human:
+    en_US: Get member information in WOZTELL.
+    zh_Hans: 获取成员的信息。
+  llm: A tool when you wants to get member information in WOZTELL.
+extra:
+  python:
+    source: tools/get_member_info.py
+identity:
+  author: woztell
+  icon: icon.svg
+  label:
+    en_US: Get Member Info By ID
+    zh_Hans: 获取成员信息
+  name: get_member_info
+parameters:
+  - form: llm
+    type: string
+    human_description:
+      en_US: Channel in WOZTELL.
+      zh_Hans: 在 WOZTELL 后台的 Channel。
+    label:
+      en_US: Channel
+      zh_Hans: 频道
+    llm_description: Channel in WOZTELL.
+    name: channelId
+    required: true
+  - form: llm
+    human_description:
+      en_US: External ID in integration. E.g. PSID on Facebook, phone number on WhatsApp, etc.
+      zh_Hans: Whatsapp 的号码或者 PSID。
+    label:
+      en_US: External ID
+      zh_Hans: External ID
+    llm_description: PSID on Facebook, phone number on WhatsApp, etc.
+    name: externalId
+    required: true
+    type: string

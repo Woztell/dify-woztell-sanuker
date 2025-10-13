@@ -1,0 +1,49 @@
+description:
+  human:
+    en_US: To send responses on behalf of your chatbot to a specific member in WOZTELL.
+    zh_Hans: 向 WOZTELL 中的特定成员发送回复。
+  llm: A tool when you wants to send responses in WOZTELL.
+extra:
+  python:
+    source: tools/send_responses.py
+identity:
+  author: woztell
+  icon: icon.svg
+  label:
+    en_US: Send Responses
+    zh_Hans: 发送回复
+  name: send_responses
+parameters:
+  - form: llm
+    type: string
+    human_description:
+      en_US: Channel in WOZTELL.
+      zh_Hans: 在 WOZTELL 后台的 Channel。
+    label:
+      en_US: Channel
+      zh_Hans: 频道
+    llm_description: Channel in WOZTELL.
+    name: channelId
+    required: true
+  - form: llm
+    human_description:
+      en_US: Recipient ID in integration. E.g. PSID on Facebook, phone number on WhatsApp, etc.
+      zh_Hans: 收件人，Whatsapp 的号码或者 PSID。
+    label:
+      en_US: Reciepient ID (WhatsApp Phone Number or PSID)
+      zh_Hans: 收件人（Whatsapp 的号码或者 PSID）
+    llm_description: Recipient ID in integration. E.g. PSID on Facebook, phone number on WhatsApp, etc.
+    name: recipientId
+    required: true
+    type: string
+  - form: llm
+    human_description:
+      en_US: The data you wish to send as a response. You can construct the response object by referencing from integration documentations or copy from Bot builder.
+      zh_Hans: 您希望发送的内容，可以使用 Bot builder 生成。
+    label:
+      en_US: Responses(JSON)
+      zh_Hans: 回复（JSON）
+    llm_description: The data will send to recipient.
+    name: response
+    required: true
+    type: string

@@ -7,7 +7,7 @@ extra:
   python:
     source: tools/send_responses.py
 identity:
-  author: Woztell
+  author: woztell
   icon: icon.svg
   label:
     en_US: Send Responses

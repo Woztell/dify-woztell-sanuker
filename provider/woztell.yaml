@@ -11,7 +11,7 @@ credentials_for_provider:
     url: https://doc.woztell.com/docs/documentations/settings/access-token
 
 identity:
-  author: "Woztell"
+  author: "woztell"
   name: "woztell"
   label:
     en_US: "WOZTELL"

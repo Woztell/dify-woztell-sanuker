@@ -7,7 +7,7 @@ extra:
   python:
     source: tools/redirect_member_to_node.py
 identity:
-  author: Woztell
+  author: woztell
   icon: icon.svg
   label:
     en_US: Redirect Member To Node

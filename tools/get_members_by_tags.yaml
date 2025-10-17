@@ -8,7 +8,7 @@ extra:
     source: tools/get_members_by_tags.py
 identity:
   author: woztell
-  icon: icon.svg
+  icon: icon.jpg
   label:
     en_US: Get Members By Tags
     zh_Hans: 获取成员

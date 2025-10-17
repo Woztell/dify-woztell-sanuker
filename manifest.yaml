@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: woztell
 name: woztell
@@ -10,8 +10,8 @@ label:
 description:
   en_US: WOZTELL is a chatbot builder platform which enables you to build your own bot easily in a code-free interface.
   zh_Hans: WOZTELL 是一个聊天机器人构建平台，让你可以在无需编写代码的界面中轻松创建属于你的机器人。
-icon: icon.svg
-icon_dark: icon-dark.svg
+icon: icon.jpg
+icon_dark: icon-dark.jpg
 resource:
   memory: 268435456
   permission:

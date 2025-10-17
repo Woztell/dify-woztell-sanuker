@@ -8,7 +8,7 @@ extra:
     source: tools/redirect_member_to_node.py
 identity:
   author: woztell
-  icon: icon.svg
+  icon: icon.jpg
   label:
     en_US: Redirect Member To Node
     zh_Hans: 发送回复

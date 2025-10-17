@@ -21,7 +21,7 @@ identity:
     en_US: "WOZTELL"
     zh_Hans: "WOZTELL"
     pt_BR: "WOZTELL"
-  icon: "icon.svg"
+  icon: "icon.jpg"
 
   #########################################################################################
   # If you want to support OAuth, you can uncomment the following code.

@@ -8,7 +8,7 @@ extra:
     source: tools/send_responses.py
 identity:
   author: woztell
-  icon: icon.svg
+  icon: icon.jpg
   label:
     en_US: Send Responses
     zh_Hans: 发送回复

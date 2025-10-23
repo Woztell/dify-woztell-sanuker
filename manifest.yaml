@@ -1,4 +1,4 @@
-version: 0.0.2
+version: 0.0.3
 type: plugin
 author: woztell
 name: woztell
@@ -13,16 +13,9 @@ description:
 icon: icon.jpg
 icon_dark: icon-dark.jpg
 resource:
-  memory: 268435456
+  memory: 1048576
   permission:
     tool:
-      enabled: true
-    storage:
-      enabled: true
-      size: 10240
-    endpoint:
-      enabled: true
-    app:
       enabled: true
 plugins:
   tools:

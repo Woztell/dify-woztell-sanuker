@@ -25,7 +25,7 @@ class WoztellRedirectMemberToNodeTool(Tool):
         runPreAction = tool_parameters.get("runPreAction", True)
         sendResponse = tool_parameters.get("sendResponse", True)
         runPostAction = tool_parameters.get("runPostAction", True)
-        input_meta = tool_parameters.get("meta", "{}")
+        input_meta = tool_parameters.get("meta", "{}") or '{}'
         meta = json.loads(input_meta)
 
         try:

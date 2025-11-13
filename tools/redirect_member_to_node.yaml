@@ -104,4 +104,5 @@ parameters:
     llm_description: Meta object provided to the node.
     name: meta
     required: false
+    default: '{}'
     type: string

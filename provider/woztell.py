@@ -10,12 +10,8 @@ class WoztellProvider(ToolProvider):
 
     def _validate_credentials(self, credentials: dict[str, Any]) -> None:
         pass
-    
-        try:
-            """
-            IMPLEMENT YOUR VALIDATION HERE
-            """
 
+        try:
             url = "https://open.api.woztell.com/v3"
             access_token = credentials.get("access_token")
 
@@ -50,4 +46,3 @@ class WoztellProvider(ToolProvider):
 
         except Exception as e:
             raise ToolProviderOAuthError(str(e))
-

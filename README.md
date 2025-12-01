@@ -12,7 +12,7 @@ In the dify workflow, you can use the **WOZTELL tool** to send messages to membe
 
 You can now create a WOZTELL account and open up a WhatsApp Business API account, completely for free.
 
-1. Go to the registration link: <https://platform.woztell.com/signup?lang=en>
+1. Go to the registration link: <https://platform.woztell.com/signup?lang=en&partner=DIFY>
 
 2. Fill in personal and company details and verify your email.
 
@@ -98,10 +98,8 @@ We sincerely appreciate your strong support and understanding of our current Dif
 
 * WOZTELL product team: [https://woztell.com](https://woztell.com)
 * Sanuker service team: [https://sanuker.com](https://sanuker.com)
-* Email: [kris@woztell.com](mailto:kris@woztell.com)
-* Email: [hello@woztell.com](mailto:hello@woztell.com)
-* WOZTELL Customer Success WhatsApp: [https://wa.me/14157959796](https://wa.me/14157959796)
-* Sanuker Service WhatsApp: [https://wa.me/85254432330](https://wa.me/85254432330)
+* Email: [presales@woztell.com](presales@woztell.com)
+* WOZTELL WhatsApp: [https://api.whatsapp.com/send/?phone=+16506145421&text=I%20want%20to%20try%20DIFY%20and%20WOZTELL](https://api.whatsapp.com/send/?phone=+16506145421&text=I%20want%20to%20try%20DIFY%20and%20WOZTELL)
 
 ## About Us
 

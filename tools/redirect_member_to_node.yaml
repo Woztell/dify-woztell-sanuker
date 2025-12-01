@@ -11,7 +11,7 @@ identity:
   icon: icon.jpg
   label:
     en_US: Redirect Member To Node
-    zh_Hans: 发送回复
+    zh_Hans: 重定向到指定节点
   name: redirect_member_to_node
 parameters:
   - form: llm

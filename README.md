@@ -6,6 +6,20 @@ WOZTELL is your all-in-one platform to seamlessly create, manage, and deploy cha
 
 In the dify workflow, you can use the **WOZTELL tool** to send messages to members.
 
+## Product Features
+
+- **Webhook**: Receive all WhatsApp, Facebook Messenger, Instagram, WebChat, and website messages in WOZTELL inbox in real time.
+
+- **Send Messages**: Send messages or approved message templates to target customers via WhatsApp Business API.
+
+- **Chatbot Forwarding**: Route customer conversations to WOZTELL chatbot for autoreply.
+
+- **Full WhatsApp Message Type Support**: Support all business message types and conversation categories available on WhatsApp and Facebook Messenger.
+
+- **Member Search**: Batch query WOZTELL user information using Member Tags.
+
+- **OpenAPI Information Query**: Directly query and update user profiles, conversation histories, and related data on WOZTELL platform via OpenAPI.
+
 ## Configuration
 
 ### Sign up WOZTELL and WhatsApp Business API for Free
